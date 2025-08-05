@@ -1,36 +1,58 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <title>Laundry Service</title>
-    <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <div class="nav-bar">
-      <img class="logo" src="dry_9313764.png" alt="logo" />
+  <body class="bg-gradient-to-br from-blue-100 via-white to-purple-100 text-gray-800">
 
-      <ul>
-        <li>Home</li>
-        <li>Services</li>
-        <li>About us</li>
-        <li>Contact us</li>
+    <!-- Navbar -->
+    <nav class="flex items-center justify-between px-6 py-4 bg-white shadow-md sticky top-0 z-50">
+      <div class="flex items-center space-x-3">
+        <img src="dry_9313764.png" alt="logo" class="h-10 w-10" />
+        <span class="text-xl font-bold text-blue-700">FreshFold</span>
+      </div>
+      <ul class="hidden md:flex space-x-6 font-medium text-gray-700">
+        <li><a href="#" class="hover:text-blue-600">Home</a></li>
+        <li><a href="#" class="hover:text-blue-600">Services</a></li>
+        <li><a href="#" class="hover:text-blue-600">About Us</a></li>
+        <li><a href="#" class="hover:text-blue-600">Contact Us</a></li>
       </ul>
+      <button class="hidden md:block bg-blue-600 text-white px-5 py-2 rounded-md hover:bg-blue-700 transition">
+        Sign Up
+      </button>
+      <!-- Mobile Menu Toggle (Optional enhancement) -->
+    </nav>
 
-      <button class="signup">Sign up</button>
-    </div>
-    <div class="container">
-      <div class="content">
-        <h1>Revitalize Your <br> Clothes With Expert <br> Laundry Services!</h1>
-        <p>
+    <!-- Hero Section -->
+    <section class="flex flex-col-reverse lg:flex-row items-center justify-between px-6 md:px-20 py-16 gap-10">
+      <!-- Text Content -->
+      <div class="max-w-xl text-center lg:text-left">
+        <h1 class="text-4xl md:text-5xl font-bold leading-tight text-blue-800">
+          Revitalize Your <br />
+          Clothes With Expert <br />
+          Laundry Services!
+        </h1>
+        <p class="mt-6 text-lg text-gray-700">
           From premium dry cleaning to swift wash and fold, we deliver care and
           convenience. Schedule a pickup and rediscover the freshness of your
           clothes today!
         </p>
-        <button class="service">Book a service today</button>
+        <button class="mt-8 bg-purple-600 text-white px-6 py-3 rounded-lg text-lg font-semibold shadow-lg hover:bg-purple-700 transition">
+          Book a Service Today
+        </button>
       </div>
-      <div class="content-image">
-        <img class="image" src="Laundry Marketing.jpeg" alt="laundry-image" />
+
+      <!-- Image -->
+      <div class="w-full max-w-md lg:max-w-lg">
+        <img
+          src="Laundry Marketing.jpeg"
+          alt="Laundry"
+          class="rounded-xl shadow-2xl w-full object-cover"
+        />
       </div>
-    </div>
+    </section>
   </body>
 </html>
